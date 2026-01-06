@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Report: {{ model_name }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .metric { font-size: 1.2em; margin: 10px 0; }
+        img { max-width: 100%; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Model Evaluation Report</h1>
+    <p><strong>Model:</strong> {{ model_name }}</p>
+    <p><strong>Date:</strong> {{ report_date }}</p>
+
+    <div class="metric">Accuracy: {{ accuracy|round(2) }}%</div>
+    <div class="metric">F1-Score: {{ f1_score|round(2) }}</div>
+
+    {% if accuracy >= 90 %}
+        <p style="color: green;">✅ Model performance is excellent!</p>
+    {% elif accuracy >= 70 %}
+        <p style="color: orange;">⚠️ Model is acceptable but could improve.</p>
+    {% else %}
+        <p style="color: red;">❌ Model performance is poor.</p>
+    {% endif %}
+
+    <h2>Confusion Matrix</h2>
+    <img src="{{ confusion_matrix_path }}" alt="Confusion Matrix">
+</body>
+</html>
