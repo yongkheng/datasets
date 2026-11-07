@@ -1,0 +1,37 @@
+[
+  {
+    "mpn": "2N3904",
+    "description": "NPN transistor TO-92",
+    "on_hand": 120,
+    "reorder_point": 500,
+    "price": 0.11
+  },
+  {
+    "mpn": "BC547",
+    "description": "NPN transistor TO-92",
+    "on_hand": 80,
+    "reorder_point": 300,
+    "price": 0.09
+  },
+  {
+    "mpn": "LM7805",
+    "description": "5 V linear regulator",
+    "on_hand": 40,
+    "reorder_point": 100,
+    "price": 0.45
+  },
+  {
+    "mpn": "1N4148",
+    "description": "Signal diode",
+    "on_hand": 1500,
+    "reorder_point": 1000,
+    "price": 0.02
+  },
+  {
+    "mpn": "NE555",
+    "description": "Timer IC",
+    "on_hand": 600,
+    "reorder_point": 200,
+    "price": 0.3
+  }
+]
