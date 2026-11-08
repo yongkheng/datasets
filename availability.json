@@ -1,0 +1,7 @@
+[
+  {"mpn": "2N3904", "supplier_stock": 25000, "lead_time_days": 3},
+  {"mpn": "BC547", "supplier_stock": 12000, "lead_time_days": 3},
+  {"mpn": "LM7805", "supplier_stock": 0, "lead_time_days": 42},
+  {"mpn": "1N4148", "supplier_stock": 50000, "lead_time_days": 2},
+  {"mpn": "NE555", "supplier_stock": 3000, "lead_time_days": 7}
+]
